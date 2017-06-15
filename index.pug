@@ -1,0 +1,57 @@
+//
+   Created by nicol on 15/06/2017.
+include modules/listItem
+include modules/card
+doctype html
+html(lang='fr')
+    head
+        meta(charset='UTF-8')
+        title LOUIS VUITTON - Site Officiel France | LOUIS VUITTON
+        link(rel='stylesheet', href='style/foundation.min.css')
+        link(rel='stylesheet', href='style/style.css')
+        script(src='javascript/jquery.js')
+        script(src='javascript/foundation.min.js')
+        script(src='https://www.gstatic.com/firebasejs/4.1.2/firebase.js')
+        script.
+            // Initialize Firebase
+            // TODO: Replace with your project's customized code snippet
+            var config = {
+                apiKey: "AIzaSyALyaQII_UYGd12D1i-OQxhkbftt5SQADI",
+                authDomain: "myproject-d5b74.firebaseapp.com",
+                databaseURL: "https://myproject-d5b74.firebaseio.com",
+                projectId: "myproject-d5b74",
+                storageBucket: "myproject-d5b74.appspot.com",
+                messagingSenderId: "723848559847"
+            };
+            firebase.initializeApp(config);
+        script(src='javascript/main.js')
+
+
+
+    body
+        div.row.expanded.align-center
+            include templates/header
+            div.column.small-10.medium-10.large-10.color.text-center.test
+                div.row.expanded
+                    div.column.small-12.medium-12.large-12.test
+                        +card('img/img1.jpg','COLLECTION PRE - FALL 2017','', 'découvrez la nouvelle campagne PRE-FAIL',"[img/img1-small.jpg, small], [img/img1-small.jpg, medium], [img/img1.jpg, large]")
+                div.row.expanded
+                    div.column.small-12.medium-12.large-6.test
+                        +card('img/img2.jpg','Accessoires Profiler Automne-Hiver 2017', "Accesoirisez votre style",'',"[img/img2-small.jpg, small], [img/img2-small.jpg, medium], [img/img2.jpg, large]")
+                    div.column.small-12.medium-12.large-6.test
+                        div.row.expanded
+                            div.column.small-12.medium-12.large-12.test.medium-container
+                                +card('','livraison offerte', 'Pour être livré à temps, commandez avant le 15 juin', 'notre sélection fête des pères' )
+                            div.column.small-12.medium-12.large-12.test.medium-container
+                                +card('img/img4.jpg','LA VICTOIRE VOYAGE AVEC LOUIS VUITTON')
+                hr
+                div.row.expanded
+                    div.column.small-12.medium-12.large-4.test
+                        +card('img/img5.jpg','Pégase 55 légère', "L'incontournable du voyageur")
+                    div.column.small-12.medium-12.large-4.test
+                        +card('img/img3.jpg',"La victoire voyage avec Louis Vuiton")
+                    div.column.small-12.medium-12.large-4.test
+                        +card('img/img6.jpg',"Portefeuille Multiple", "Offrez--lui un présent inoubliable")
+            include templates/footer
+            script.
+                $(document).foundation();

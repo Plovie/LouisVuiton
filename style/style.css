@@ -1,0 +1,96 @@
+
+.header{
+    padding:0;
+}
+
+
+.top-bar-title strong{
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.card{
+    height:100%;
+    width: 100%;
+    border: none;
+}
+
+.card h4{
+    text-transform: uppercase;
+}
+.medium-container{
+    margin-bottom: 10px;
+}
+.aside-container{
+    height: 100%;
+    font-weight: 100;
+}
+
+.container-card{
+    min-height: 300px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.top-bar, .top-bar .menu, .menu{
+    background-color: #000;
+    height: 50px;
+}
+
+.top-bar-left{
+    margin-left:10% ;
+}
+
+.menu li, .menu li a{
+    padding: 0 11px;
+    margin-left: 5px;
+}
+.listItem{
+    color: #bfa69a;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.top-bar-title span{
+    background: url(http://fr.louisvuitton.com/static/css/images/Burger.svg)
+}
+.menu svg{
+    height: auto;
+    fill: #BFA69A;
+    top: 50%;
+    width:20px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.button.success{
+    background: #533f34 url(http://fr.louisvuitton.com/static/css/images/arrow_right_white.png) 10px 50% no-repeat;;
+    border-radius: inherit;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    position: relative;
+    padding: 8px 15px 8px 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 100;
+    min-width: 400px ;
+}
+.button.success:hover{
+    background-color: #533f34;
+    color: white;
+}
+
+.top-bar .top-bar-right{
+    flex:0;
+}
+
+hr{
+    margin: 20px 0 20px 0;
+    width: 100%;
+}

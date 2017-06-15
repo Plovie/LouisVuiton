@@ -1,0 +1,70 @@
+//
+   Created by nicol on 15/06/2017.
+
+div.column.small-12.medium-12.large-11.header
+    div.top-bar(data-responsive-toggle='responsive-menu', data-hide-for='large')
+        div.top-bar-title
+            button.menu-icon(type='button', data-toggle='')
+            strong LOUIS VUITTON
+        div.top-bar-right
+            ul.menu
+                li
+                    svg(version='1.1', x='0px', y='0px', viewbox='0 0 7.2 7.2', xml:space='preserve', aria-labelledby='search-form')
+                        title#search-form Rechercher
+                        path(d='M6.964,6.506L5.22,4.762C5.175,4.717,5.109,4.704,5.04,4.701\
+                              c0.357-0.469,0.578-1.047,0.578-1.682c0-1.539-1.247-2.786-2.786-2.786c-1.539,0-2.786,1.248-2.786,2.786s1.247,2.786,2.786,2.786\
+                              c0.669,0,1.274-0.245,1.754-0.638C4.593,5.229,4.61,5.289,4.652,5.331l1.744,1.744C6.519,7.199,6.84,7.154,6.964,7.03\
+                              C7.087,6.906,7.087,6.63,6.964,6.506z M2.879,4.95c-1.083,0-1.961-0.878-1.961-1.961s0.878-1.961,1.961-1.961\
+                              c1.083,0,1.961,0.878,1.961,1.961S3.962,4.95,2.879,4.95z')
+                li
+                    svg(version='1.1', x='0px', y='0px', width='9.6px', height='8.16px', viewbox='0 0 9.6 8.16', xml:space='preserve', aria-labelledby='shopping-cart-empty')
+                        title#shopping-cart-empty Panier
+                        path(d='M2.875,2.862H6.23V2.738h0.274V2.291\
+                             c0-1.06-0.859-1.919-1.92-1.919c-1.06,0-1.919,0.859-1.919,1.919v0.448h0.209V2.862z M3.078,2.493\
+                             c0-0.906,0.642-1.642,1.497-1.642c0.854,0,1.548,0.735,1.548,1.642v0.353L3.078,2.852V2.493z M8.975,3.941\
+                             C8.825,3.062,8.619,2.862,7.896,2.862H6.724v4.82H6.23V2.924L2.875,2.922v4.761H2.382v-4.82H1.273\
+                             c-0.723,0-0.919,0.232-1.079,1.079L0.018,7.699l0.714-0.012h7.704l0.696-0.001L8.975,3.941z')
+                li
+                    svg(version='1.1', x='0px', y='0px', width='7.2px', height='6.24px', viewbox='0 0 7.2 6.24', xml:space='preserve', aria-labelledby='wishlist-title')
+                        title#wishlist-title Wishlist
+                        path(d='M5.174,0.088c-1.176,0-1.608,1.054-1.608,1.054S3.071,0.088,1.958,0.088\
+                      c-1.216,0-1.855,1.031-1.855,2.062c0,1.711,3.463,3.834,3.463,3.834s3.442-2.103,3.442-3.834C7.008,1.098,6.349,0.088,5.174,0.088z')
+
+
+    div.top-bar#responsive-menu
+        div.top-bar-title
+            strong LOUIS VUITTON
+        div.top-bar-left
+            ul.menu
+                +listItem('Lv now')
+                +listItem('La maison')
+                +listItem('femme')
+                +listItem('homme')
+                +listItem('magasins')
+        div.top-bar-right
+            ul.menu
+                li
+                    svg(version='1.1', x='0px', y='0px', viewbox='0 0 7.2 7.2', xml:space='preserve', aria-labelledby='search-form')
+                        title#search-form Rechercher
+                        path(d='M6.964,6.506L5.22,4.762C5.175,4.717,5.109,4.704,5.04,4.701\
+                       c0.357-0.469,0.578-1.047,0.578-1.682c0-1.539-1.247-2.786-2.786-2.786c-1.539,0-2.786,1.248-2.786,2.786s1.247,2.786,2.786,2.786\
+                       c0.669,0,1.274-0.245,1.754-0.638C4.593,5.229,4.61,5.289,4.652,5.331l1.744,1.744C6.519,7.199,6.84,7.154,6.964,7.03\
+                       C7.087,6.906,7.087,6.63,6.964,6.506z M2.879,4.95c-1.083,0-1.961-0.878-1.961-1.961s0.878-1.961,1.961-1.961\
+                       c1.083,0,1.961,0.878,1.961,1.961S3.962,4.95,2.879,4.95z')
+                li
+                    svg(version='1.1', x='0px', y='0px', width='9.6px', height='8.16px', viewbox='0 0 9.6 8.16', xml:space='preserve', aria-labelledby='shopping-cart-empty')
+                        title#shopping-cart-empty Panier
+                        path(d='M2.875,2.862H6.23V2.738h0.274V2.291\
+                      c0-1.06-0.859-1.919-1.92-1.919c-1.06,0-1.919,0.859-1.919,1.919v0.448h0.209V2.862z M3.078,2.493\
+                      c0-0.906,0.642-1.642,1.497-1.642c0.854,0,1.548,0.735,1.548,1.642v0.353L3.078,2.852V2.493z M8.975,3.941\
+                      C8.825,3.062,8.619,2.862,7.896,2.862H6.724v4.82H6.23V2.924L2.875,2.922v4.761H2.382v-4.82H1.273\
+                      c-0.723,0-0.919,0.232-1.079,1.079L0.018,7.699l0.714-0.012h7.704l0.696-0.001L8.975,3.941z')
+                li
+                    svg(version='1.1', x='0px', y='0px', width='7.2px', height='6.24px', viewbox='0 0 7.2 6.24', xml:space='preserve', aria-labelledby='wishlist-title')
+                        title#wishlist-title Wishlist
+                        path(d='M5.174,0.088c-1.176,0-1.608,1.054-1.608,1.054S3.071,0.088,1.958,0.088\
+                      c-1.216,0-1.855,1.031-1.855,2.062c0,1.711,3.463,3.834,3.463,3.834s3.442-2.103,3.442-3.834C7.008,1.098,6.349,0.088,5.174,0.088z')
+
+
+
+

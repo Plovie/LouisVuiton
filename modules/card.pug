@@ -1,0 +1,29 @@
+//
+   Created by nicol on 15/06/2017.
+
+mixin card(image, name, description, button, imageSmall)
+    div.card
+        if(image)
+            if (imageSmall)
+                img(data-interchange=imageSmall)
+            else
+                img(src= image)
+            div.card-section(data-responsive-toggle='responsive-desc', data-hide-for='large')
+                h4= name
+                if button
+                    a.success.button
+                        span= button
+
+            div.card-section#responsive-desc
+                p= description
+                if button
+                    a.success.button
+                        span= button
+
+        else
+            div.container-card
+                div
+                    h4= name
+                    p= description
+                    a.success.button= button
+
